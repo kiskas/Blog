@@ -3,6 +3,24 @@ body    {
     padding: 0;
 }
 
+a   {
+    color: #659c00;
+}
+
+.line   {
+    width: 100%;
+    height: 10px;
+    background: url('../images/line.jpg') repeat-x;
+}
+
+.header-container,
+.container  {
+    width: 1024px;
+    height: auto;
+    margin: 0 auto;
+}
+
+
 
 
 /* header
@@ -20,11 +38,17 @@ body    {
     background-image: url('../images/header-bg-gradient.jpg');
 }
 
-.line   {
-    width: 100%;
-    height: 10px;
-    background: url('../images/line.jpg') repeat-x;
+.header-container   {
+    height: auto;
+    min-height: 300px;
+    background: #171717;
 }
+
+#header .menu   {
+    background: url('../images/logo.png') no-repeat top center;
+}
+
+
 
 
 /* content
