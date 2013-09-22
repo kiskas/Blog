@@ -4,17 +4,20 @@ body    {
 }
 
 #header {
+    height: 100px;
+    width: 100%;
     background-image: linear-gradient(bottom, rgb(112,168,21) 19%, rgb(168,198,47) 60%);
     background-image: -o-linear-gradient(bottom, rgb(112,168,21) 19%, rgb(168,198,47) 60%);
     background-image: -moz-linear-gradient(bottom, rgb(112,168,21) 19%, rgb(168,198,47) 60%);
     background-image: -webkit-linear-gradient(bottom, rgb(112,168,21) 19%, rgb(168,198,47) 60%);
     background-image: -ms-linear-gradient(bottom, rgb(112,168,21) 19%, rgb(168,198,47) 60%);
 
-    background-image: -webkit-gradient(
-        linear,
-        left bottom,
-        left top,
-        color-stop(0.19, rgb(112,168,21)),
-        color-stop(0.6, rgb(168,198,47))
-    );
+    background-image: url('../images/header-bg-gradient.jpg');
 }
+
+.line   {
+    width: 100%;
+    height: 10px;
+    background: url('../images/line.jpg') repeat-x;
+}
+
