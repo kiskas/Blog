@@ -38,12 +38,21 @@ a   {
     background-image: url('../images/header-bg-gradient.jpg');
 }
 
-.header-container   {
-    height: 90px;
-    background: #171717;
-
-    padding: 15px;
+#header {
+    height: 100%;
 }
+
+.header-container   {
+
+    padding: 0 15px 15px 15px;
+}
+
+#header .menu   {
+    height: 110px;
+    background: #171717;
+    padding-top: 15px;
+}
+
 
 #header .logo,
 #header ul  {
@@ -51,11 +60,7 @@ a   {
     text-align: center;
 }
 
-#header {
-    height: 100%;
-}
-
-#header .logo a   {
+#header .logo   {
     position: relative;
     top: -38px;
 }
@@ -71,19 +76,34 @@ a   {
 #header ul  {
     width: 40%;
 
-    padding-top: 30px;
+    padding-top: 35px;
 }
 
-#header ul li   {
+#header li   {
     width: auto;
     display: inline-block;
 
     padding: 5px 20px 5px 20px;
 }
 
-#header ul li a   {
+#header li a   {
     font: 16px Trebuchet MS;
     color: #ffffff;
+    text-decoration: none;
+}
+
+#header li a:hover   {
+    text-decoration: underline;
+}
+
+
+.inform-logo .logo-text    {
+    text-align: center;
+}
+
+.inform-logo .logo-text    {
+    font: italic 32px Times New Roman;
+    color: #f2febe;
 }
 
 
