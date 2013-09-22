@@ -27,7 +27,7 @@ a   {
 ---------------------------*/
 
 #header {
-    height: 100px;
+    height: 120px;
     width: 100%;
     background-image: linear-gradient(bottom, rgb(112,168,21) 19%, rgb(168,198,47) 60%);
     background-image: -o-linear-gradient(bottom, rgb(112,168,21) 19%, rgb(168,198,47) 60%);
@@ -39,16 +39,52 @@ a   {
 }
 
 .header-container   {
-    height: auto;
-    min-height: 300px;
+    height: 90px;
     background: #171717;
+
+    padding: 15px;
 }
 
-#header .menu   {
+#header .logo,
+#header ul  {
+    display: inline-block;
+    text-align: center;
+}
+
+#header {
+    height: 100%;
+}
+
+#header .logo a   {
+    position: relative;
+    top: -38px;
+}
+
+#header .logo a   {
+    width: 175px;
+    height: 101px;
     background: url('../images/logo.png') no-repeat top center;
+    display: block;
+    text-decoration: none;
 }
 
+#header ul  {
+    width: 40%;
 
+    padding-top: 30px;
+}
+
+#header ul li   {
+    width: auto;
+    display: inline-block;
+
+    padding: 5px 20px 5px 20px;
+}
+
+#header ul li a   {
+    font: 16px Trebuchet MS;
+    color: #ffffff;
+}
 
 
 /* content
