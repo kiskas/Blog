@@ -98,12 +98,17 @@ a   {
 
 
 .inform-logo .logo-text    {
-    text-align: center;
 }
 
-.inform-logo .logo-text    {
+.inform-logo h1,
+.inform-logo h2 {
     font: italic 32px Times New Roman;
+    text-align: center;
     color: #f2febe;
+}
+
+.inform-logo h2 {
+    font-size: 36px;
 }
 
 
