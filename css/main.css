@@ -27,7 +27,7 @@ a   {
 ---------------------------*/
 
 #header {
-    height: 120px;
+    height: 100%;
     width: 100%;
     background-image: linear-gradient(bottom, rgb(112,168,21) 19%, rgb(168,198,47) 60%);
     background-image: -o-linear-gradient(bottom, rgb(112,168,21) 19%, rgb(168,198,47) 60%);
@@ -35,11 +35,7 @@ a   {
     background-image: -webkit-linear-gradient(bottom, rgb(112,168,21) 19%, rgb(168,198,47) 60%);
     background-image: -ms-linear-gradient(bottom, rgb(112,168,21) 19%, rgb(168,198,47) 60%);
 
-    background-image: url('../images/header-bg-gradient.jpg');
-}
-
-#header {
-    height: 100%;
+    background: #94ba27 url('../images/header-bg-gradient.jpg') repeat-x left bottom;
 }
 
 .header-container   {
@@ -97,9 +93,18 @@ a   {
 }
 
 
-.inform-logo .logo-text    {
-    background: url('../images/left-palm.png') no-repeat 0 -55px;
+.palm-left  {
+    background: url('../images/palm.png') no-repeat 0 -55px;
+    height: 135px;
+    width: 215px;
+    float: left;
+}
 
+.palm-right {
+    background: url('../images/palm.png') no-repeat 0 -193px;
+    height: 203px;
+    width: 215px;
+    float: right;
 }
 
 .inform-logo h1,
@@ -114,6 +119,18 @@ a   {
 }
 
 
+/* gallery
+-------------------------*/
+
+#gallery    {
+    width: 90%;
+    height: 300px;
+    background: #f8fbe9;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
 /* content
 ----------------------- */
 
@@ -123,6 +140,8 @@ a   {
     min-height: 500px;
     background: #f5f5f5;
 }
+
+
 
 /* footer
 ------------------------*/
