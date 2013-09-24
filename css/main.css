@@ -101,10 +101,14 @@ a   {
 }
 
 .palm-right {
-    background: url('../images/palm.png') no-repeat 0 -193px;
+    background: url('../images/palm.png') no-repeat 0 -194px;
     height: 203px;
     width: 215px;
     float: right;
+    position: relative;
+    z-index: 1;
+    left: 115px;
+    top: -116px;
 }
 
 .inform-logo h1,
@@ -129,8 +133,10 @@ a   {
 .search {
     width: 100%;
     text-align: right;
+    position: relative;
+    z-index: 9999;
 
-    padding: 20px;
+    padding: 0 20px 20px 20px;
 }
 
 .search input.input-text   {
@@ -164,6 +170,9 @@ a   {
     height: 275px;
     background: #f8fbe9;
     text-align: center;
+    position: relative;
+    z-index: 3;
+
     margin: 0 auto;
     padding: 10px;
 }
