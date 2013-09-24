@@ -122,12 +122,45 @@ a   {
     padding: 20px;
 }
 
+
+/* search
+--------------------------*/
+
+.search {
+    width: 100%;
+    text-align: right;
+
+    padding: 20px;
+}
+
+.search input.input-text   {
+    width: 186px;
+    font: italic 14px Times New Roman;
+    color: #7d7d7d;
+    background: #f0f1ed;
+    border: 1px solid #f0f1ed;
+    border-radius: 5px;
+
+    padding: 3px;
+}
+
+.search input#send   {
+    width: 30px;
+    height: 20px;
+    border: none;
+    background: url('../images/loupe.jpg') no-repeat 10px 10px;
+    cursor: pointer;
+    position: relative;
+    right: 30px;
+}
+
+
 /* gallery
 -------------------------*/
 
 
 #gallery    {
-    width: 90%;
+    width: 98%;
     height: 275px;
     background: #f8fbe9;
     text-align: center;
