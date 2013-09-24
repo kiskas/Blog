@@ -118,19 +118,26 @@ a   {
     font-size: 36px;
 }
 
+.inform-logo  .logo-text    {
+    padding: 20px;
+}
 
 /* gallery
 -------------------------*/
 
+
 #gallery    {
     width: 90%;
-    height: 300px;
+    height: 275px;
     background: #f8fbe9;
     text-align: center;
     margin: 0 auto;
     padding: 10px;
 }
 
+#gallery .gallery-ico    {
+    width: 653px;
+}
 
 /* content
 ----------------------- */
