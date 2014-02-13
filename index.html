@@ -9,6 +9,38 @@
     <link rel="shortcut icon" href="" />
     <link rel="stylesheet" href="css/reset.css" type="text/css" />
     <link rel="stylesheet" href="css/main.css" type="text/css" />
+
+    <!--[if IE]>
+        <link href="css/ie.min.css" type="text/css" rel="stylesheet">
+    <![endif]-->
+	
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+
+	<!-- Plugin scripts -->
+	<script type="text/javascript" src="js/jquery.sliderkit.1.4.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.1.3.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+	
+	<!-- Launch Slider Kit -->
+		<script type="text/javascript">
+		$(window).load(function(){ //jQuery(window).load() must be used instead of jQuery(document).ready() because of Webkit compatibility				
+
+			// News slider > Vertical
+			$(".newslider-vertical").sliderkit({
+				shownavitems:3,
+				verticalnav:true,
+				navitemshover:true
+			});
+
+		});	
+	</script>
+	<!-- Plugin styles -->
+	<link rel="stylesheet" type="text/css" href="css/sliderkit-core.css" media="screen, projection" />
+	<link rel="stylesheet" type="text/css" href="css/sliderkit-demos.css" media="screen, projection" />
+
+	<!-- Site styles -->
+
+
 </head>
 <body>
     <div id="wrapper">
@@ -30,8 +62,8 @@
                 <div class="palm-left"></div>
                 <div class="inform-logo">
                     <div class="logo-text">
-                        <h1>Добро пожаловать на мой сайт</h1>
-                        <h2>“My Gardening”</h2>
+                        <h1>Добро пожаловать на сайт</h1>
+                        <h2>“Gardening”</h2>
                     </div>
                     <div class="search">
                         <form action="">
@@ -42,28 +74,110 @@
                 </div>
                 <div class="palm-right"></div>
                 <div id="gallery">
-                    <div class="gallery-ico">
-                        <img src="./images/gallery-ico.jpg"/>
-                    </div>
-                    <div class="gallery-info">
-                        <h4>Ландшафт</h4>
-                        <p>Расскажем вам варианты дизайна для вашего сада</p>
-                    </div>
-                    <div class="gallery-button"></div>
-                </div>
+					<div class="sliderkit newslider-vertical" >
+						<div class="sliderkit-panels">
+							<div class="sliderkit-panel">
+								<div class="sliderkit-news">
+									<a href="#" title="[Titre de l'article]">
+										<img src="./images/slider/slider-1.jpg" alt="[alternative text]" />
+									</a>
+								</div>
+							</div>
+							<div class="sliderkit-panel">
+								<div class="sliderkit-news">
+									<a href="#" title="[Titre de l'article]">
+										<img src="./images/slider/slider-2.jpg" alt="[alternative text]" />
+									</a>
+								</div>
+							</div>
+							<div class="sliderkit-panel">
+								<div class="sliderkit-news">
+									<a href="#" title="[Titre de l'article]">
+										<img src="./images/slider/slider-3.jpg" alt="[alternative text]" />
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="sliderkit-nav">
+							<div class="sliderkit-nav-clip">
+								<ul>
+									<li>
+										<a href="#" title="[link title]">
+											<span class="gallery-info">
+												<h4>Ландшафт1</h4>
+												<p>1Расскажем вам варианты дизайна для вашего сада</p>
+											</span>
+										</a>
+									</li>
+									<li>
+										<a href="#" title="[link title]">
+											<span class="gallery-info">
+												<h4>Ландшафт2</h4>
+												<p>2Расскажем вам варианты дизайна для вашего сада</p>
+											</span>											
+										</a>
+									</li>
+									<li>
+										<a href="#" title="[link title]">
+											<span class="gallery-info">
+												<h4>Ландшафт3</h4>
+												<p>3Расскажем вам варианты дизайна для вашего сада</p>
+											</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div> 
+                </div> <!-- end gallery -->
             </div>
         </div>
         <div class="line"></div>
         <div id="content">
             <div class="container">
-                <div class="container-category"></div>
+                <div class="container-category">
+					<div class="block-category">
+						<a href="">
+							<h1>Огород</h1>
+							<img src="./images/category-ico.jpg" alt="" />
+							<p>В этом разделе рассказывается о посадках, в какое время и как лучше сажать. Расскажу о личном опыте и эксперементах.</p>
+						</a>
+						<div class="next-reader">
+							<a href="">Далее</a>
+						</div>
+					</div>
+					
+					<div class="block-category">
+						<a href="">
+							<h1>Сад</h1>
+							<img src="./images/category-ico.jpg" alt="" />
+							<p>В этом разделе рассказывается о посадках, в какое время и как лучше сажать. Расскажу о личном опыте и эксперементах.</p>
+						</a>
+						<div class="next-reader">
+							<a href="">Далее</a>
+						</div>
+					</div>
+					
+					<div class="block-category">
+						<a href="">
+							<h1>Кустарники</h1>
+							<img src="./images/category-ico.jpg" alt="" />
+							<p>В этом разделе рассказывается о посадках, в какое время и как лучше сажать. Расскажу о личном опыте и эксперементах.</p>
+							</a>
+						<div class="next-reader">
+							<a href="">Далее</a>
+						</div>
+					</div>
+				</div>
                 <div class="container-inform">
                     <div class="about-site">
-                        <h1></h1>
-                        <p></p>
+                        <h1>Немного о сайте</h1>
+                        <p>Я рада вас приветствовать на моем сайте, который посвящен садоводству. Здесь вы узнаете много полезного, интересного и нужного, надеюсь вам пригодятся мои статьи по уходу за вашим огородом.</p>
+                        <p>Так же, я буду рассказывать не только про огород, но и про то, как лучше посадить деревце, какие цветы на участке смотряться лучше и для каких цветом не понадобиться много сил, для их выращивания.</p>
+                        <p>Оставляейте свои комментарии, буду рада поделиться опытом и советом. А может и вы меня чему-нибудь поучите ^_^</p>
                     </div>
                     <div class="last-add-news">
-                        <h3></h3>
+                        <h3>Последние добавление</h3>
                         <ul>
                             <li><a href="">Когда лучше сажать</a></li>
                             <li><a href="">Уход за растениями</a></li>
@@ -74,11 +188,17 @@
                             <li><a href="">Сажаем картошку</a></li>
                             <li><a href="">Помидорки</a></li>
                         </ul>
+						<div class="next-reader">
+							<a href="">Все новости</a>
+						</div>
                     </div>
                 </div>
             </div>
         </div>
         <div id="footer">
+			<div class="spade-ico">
+				<img src="./images/spade.png">
+			</div>
             <div class="information">
 
             </div>
