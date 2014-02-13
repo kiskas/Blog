@@ -121,20 +121,10 @@
   }
 
 .caption {
-  position: absolute;
-  display: block;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 15px;
-  text-align: center;
-  background: #000;
-  background: rgba(0,0,0, .8);
-  color: #fff;
-}
-
-@media screen and (max-width: 600px) {
-  .github {
-    display: none;
-  }
+	display: block;
+	padding: 15px 42px 15px 5px;
+	text-align: center;
+	color: #fff;
+	float: right;
+	width: 36%;
 }
