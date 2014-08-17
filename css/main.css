@@ -52,7 +52,6 @@ li	{
     list-style: none outside none;
 }
 
-
 .col-md-3 li a,
 .news-navigation li a	{
     color: #8e9176;
@@ -402,6 +401,33 @@ blockquote p	{
     font-size: 80%;
     line-height: 1.42857;
 }
+
+
+.form-question label   {
+    width: 100%;
+}
+
+.recipes .col-md-12    {
+    background: none repeat scroll 0 0 #fafafa;
+    border: 1px solid #e1e1e1;
+    border-radius: 2px;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
+    clear: both;
+    height: 100%;
+    margin: 10px 0;
+    overflow: hidden;
+    padding: 15px 10px 10px;
+    position: relative;
+    width: 100%;
+}
+
+.recipes .icon-recipes .white   {
+    width: 100%;
+    height: 100%;
+    background: #000;
+}
+
+
 
 /* footer
 ------------------------*/
