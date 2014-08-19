@@ -9,8 +9,10 @@ $(function () {
 	$(window).scroll(function () {
 		if ($(this).scrollTop() > 50) {
 			$('.up').fadeIn();
+            $('.col-md-3.default').addClass('fixed');
 		}else {
 			$('.up').fadeOut();
+            $('.col-md-3.default').removeClass('fixed');
 		}
 	});
 	
