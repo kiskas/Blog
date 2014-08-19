@@ -52,6 +52,11 @@ li	{
     list-style: none outside none;
 }
 
+hr  {
+    clear: both;
+}
+
+
 .col-md-3 li a,
 .news-navigation li a	{
     color: #8e9176;
@@ -415,18 +420,55 @@ blockquote p	{
     clear: both;
     height: 100%;
     margin: 10px 0;
-    overflow: hidden;
-    padding: 15px 10px 10px;
+    overflow: visible;
+    padding: 15px 10px 10px 0;
     position: relative;
     width: 100%;
 }
 
-.recipes .icon-recipes .white   {
-    width: 100%;
-    height: 100%;
-    background: #000;
+.recipes .icon-recipes .rotate {
+    -webkit-transform: rotate(-6deg);
+    -khtml-transform: rotate(-6deg);
+    -moz-transform: rotate(-6deg);
+    -ms-transform: rotate(-6deg);
+    -o-transform: rotate(-6deg);
+
+    background: #fff;
+    border-radius: 0;
 }
 
+.recipes .icon-recipes .white   {
+    -webkit-transform: rotate(6deg);
+    -khtml-transform: rotate(6deg);
+    -moz-transform: rotate(6deg);
+    -ms-transform: rotate(6deg);
+    -o-transform: rotate(6deg);
+    border-radius: 0;
+}
+
+.recipes .arrow a   {
+    background: url('../images/arrow-right.png') no-repeat;
+    width: 44px;
+    height: 44px;
+    display: block;
+}
+
+.col-md-4.icon-recipes  {
+    margin-left: -25px;
+    padding-left: 0;
+}
+
+.recipes .col-md-1  {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 30px;
+    top: 41%;
+}
+
+.recipes .col-md-8 {
+    margin-left: 35px;
+}
 
 
 /* footer
