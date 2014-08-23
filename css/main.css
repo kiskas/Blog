@@ -364,6 +364,14 @@ li a:hover	{
 	margin: 10px;
 }
 
+#content .container ul	{
+    background: url('../images/marker.png') no-repeat 0 -15px;
+}
+
+#content .container ol  {
+    list-style: decimal;
+}
+
 .news-navigation ul    {
     list-style: none;
     padding-left: 0;
@@ -422,6 +430,10 @@ li a:hover	{
 .gallery .col-md-3   {
     float: none;
     display: inline-block;
+}
+
+.gallery  {
+    padding-left: 30px;
 }
 
 .nextpage {
