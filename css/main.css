@@ -412,11 +412,16 @@ li a:hover	{
     border: 1px solid #808080;
     border-radius: 3px;
     margin: 2px;
-    max-height: 115px;
+    max-height: 120px;
     height: auto;
     max-width: 173px;
     width: 100%;
     padding: 5px;
+}
+
+.gallery .col-md-3   {
+    float: none;
+    display: inline-block;
 }
 
 .nextpage {
