@@ -533,6 +533,113 @@ blockquote p	{
     right: 0;
 }
 
+
+
+#faq .jot-subject{
+    display: none;
+}
+
+#faq .jot-user{
+    width: 90%;
+}
+
+#faq .faq-list   {
+    display: block;
+    margin: 20px;
+    background-clip: padding-box;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    left: 0;
+    line-height: 1.42857;
+    padding: 1px;
+    text-align: left;
+    top: 0;
+    white-space: normal;
+    z-index: 1060;
+}
+
+#faq .faq-bottom > .arrow::after,
+#faq .jot-comment > .arrow::after {
+    border-bottom-color: #fff;
+    border-top-width: 0;
+    content: " ";
+    margin-left: -10px;
+    top: 1px;
+    border-width: 10px;
+    content: "";
+}
+
+#faq .faq-bottom > .arrow,
+#faq .faq-bottom > .arrow::after,
+#faq .jot-comment > .arrow,
+#faq .jot-comment > .arrow::after {
+    border-color: transparent;
+    border-style: solid;
+    display: block;
+    height: 0;
+    position: absolute;
+    width: 0;
+}
+
+#faq .faq-bottom > .arrow,
+#faq .jot-comment > .arrow {
+    border-bottom-color: rgba(0, 0, 0, 0.25);
+    border-top-width: 0;
+    left: 50%;
+    margin-left: -11px;
+    margin-top: -22px;
+}
+
+
+#faq .faq-bottom > .arrow,
+#faq .jot-comment > .arrow {
+    border-width: 11px;
+}
+
+#faq .faq-title,
+#faq .jot-row-alt,
+#faq .jot-row-author {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #ebebeb;
+    border-radius: 5px 5px 0 0;
+    font-size: 14px;
+    margin: 0;
+    padding: 8px 14px 20px 14px;
+}
+
+#faq .faq-content {
+    padding: 9px 14px;
+}
+
+
+
+#faq .jot-content {
+    margin-left: 0;
+}
+
+#faq .jot-row {
+    border: none;
+    margin-bottom: 0;
+    background-color: inherit;
+}
+
+.jot-row-author h3.users-title {
+    display: none;
+}
+
+.question-input {
+    padding-bottom: 10px;
+}
+
+.buttom {
+    padding-top: 10px;
+}
+
 /* footer
 ------------------------*/
 footer  {
