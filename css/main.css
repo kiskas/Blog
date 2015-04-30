@@ -533,17 +533,8 @@ blockquote p	{
     right: 0;
 }
 
-
-
-#faq .jot-subject{
-    display: none;
-}
-
-#faq .jot-user{
-    width: 90%;
-}
-
-#faq .faq-list   {
+#faq .faq-list,
+.faq-list{
     display: block;
     margin: 20px;
     background-clip: padding-box;
@@ -612,13 +603,15 @@ blockquote p	{
     padding: 8px 14px 20px 14px;
 }
 
-#faq .faq-content {
+#faq .faq-content,
+.faq-content{
     padding: 9px 14px;
 }
 
 
 
-#faq .jot-content {
+#faq .jot-content,
+.jot-content{
     margin-left: 0;
 }
 
@@ -627,9 +620,19 @@ blockquote p	{
     margin-bottom: 0;
     background-color: inherit;
 }
+#commentsAnchor .jot-row {
+    border: none;
+    margin-bottom: 0;
+}
 
-.jot-row-author h3.users-title {
+.jot-row-author h4.users-title,
+.jot-extra h4.users-title {
     display: none;
+}
+
+.jot-extra .jot-user {
+    width: auto;
+    float: none;
 }
 
 .question-input {
@@ -639,6 +642,22 @@ blockquote p	{
 .buttom {
     padding-top: 10px;
 }
+
+
+.jot-extra .jot-poster {
+    text-align: right;
+}
+
+.jot-extra h4.users-title {
+    display: block;
+}
+
+#commentsAnchor .jot-content {
+    margin-left: 0;
+    padding: 9px 14px;
+}
+
+
 
 /* footer
 ------------------------*/
