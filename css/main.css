@@ -359,6 +359,10 @@ li a:hover	{
     padding-bottom: 175px;
 }
 
+.container-text strong {
+    font-weight: bold;
+}
+
 #content .container-text img	{
 	width: 300px;
 	margin: 10px;
